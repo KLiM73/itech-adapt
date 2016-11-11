@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'freesetcregular';
+    src: url('fonts/freesetc-webfont.eot');
+    src: url('fonts/freesetc-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/freesetc-webfont.woff2') format('woff2'),
+    url('fonts/freesetc-webfont.woff') format('woff'),
+    url('fonts/freesetc-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'freesetdemicregular';
+    src: url('fonts/freesetdemic-webfont.eot');
+    src: url('fonts/freesetdemic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/freesetdemic-webfont.woff2') format('woff2'),
+    url('fonts/freesetdemic-webfont.woff') format('woff'),
+    url('fonts/freesetdemic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'freesetlightcregular';
+    src: url('fonts/freesetlightc-webfont.eot');
+    src: url('fonts/freesetlightc-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/freesetlightc-webfont.woff2') format('woff2'),
+    url('fonts/freesetlightc-webfont.woff') format('woff'),
+    url('fonts/freesetlightc-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+}
+
+.content {
+    padding: 40px;
+}
+/*Хэдер*/
+.logo__link {
+    display: inline-block;
+    margin-bottom: 72px;
+
+}
+.header {
+    background-color: #f5f5f5;
+    padding: 40px;
+}
+.header__phone {
+    font-size: 4rem;
+    color: #2f3543;
+    text-decoration: none;
+    font-family: 'freesetdemicregular', Arial, sans-serif;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.menu {
+    float: right;
+}
+
+/*Хлебные крошки*/
+.breadcrumbs__item {
+    font-family: Arial;
+    color: #acadb1;
+    font-size: 2.2rem;
+    text-decoration: none;
+}
+.breadcrumbs__item:after {
+    content:url("img/breadcrumbs-arrow.png");
+    margin: auto 18px;
+    display: inline-block;
+    position: relative;
+    top: -5px;
+}
+.breadcrumbs__item:last-child:after {
+    content: none;
+}
+
+
+/*Вакансия*/
+.vacancy {
+    padding-bottom: 125px;
+    border-bottom: 2px solid #e6e6e6;
+    margin-bottom: 88px;
+}
+.vacancy__info {
+    border-bottom: 2px solid #e6e6e6;
+    margin: auto -15px;
+    padding: auto 15px;
+}
+.vacancy__name {
+    font-family: 'freesetlightcregular', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 8rem;
+    color: #2f3543;
+    word-break: break-all;
+}
+.vacancy__price, .vacancy__stage, .vacancy__education {
+    color: #2f3543;
+    font-size: 2.4rem;
+    display: inline-block;
+    font-family: 'freesetcregular', Arial, sans-serif;
+    margin-right: 38px;
+    margin-bottom: 30px;
+}
+.vacancy__price {
+    margin-right: 38px;
+}
+.vacancy__category, .vacancy__date {
+    color: #8791a8;
+    font-family: 'freesetcregular', Arial, sans-serif;
+    font-size: 2.4rem;
+    display: inline-block;
+    margin-right: 38px;
+    margin-bottom: 30px;
+}
+
+
+h3 {
+    font-family: 'freesetcregular', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 4rem;
+    color: #2f3543;
+    display: inline-block;
+    margin: 0;
+}
+.custom-list {
+    list-style: none;
+}
+.custom-list__item {
+    color: #2f3543;
+    font-family: 'freesetcregular', Arial, sans-serif;
+    font-size: 2.8rem;
+    line-height: 36px;
+    margin-bottom: 66px;
+}
+.custom-list__item:before {
+    content: url("img/list_dot.png");
+    position: relative;
+    top: -5px;
+    left: -15px;
+}
+
+
+/*Форма*/
+.vacancy-form {
+    width: auto;
+    overflow: hidden;
+    margin-bottom: 125px;
+}
+.vacancy-form__name, .vacancy-form__phone, .vacancy-form__email, .vacancy-form__city, .vacancy-form__message {
+    border: none;
+    outline: none;
+    background-color: #e5e5e5;
+    color: #8791a8;
+    font-size: 2.8rem;
+    padding: 50px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-family: 'freesetcregular', Arial, sans-serif;
+}
+.vacancy-form__span {
+    color: #2f3543;
+    font-size: 4rem;
+    display: inline-block;
+    margin-bottom: 28px;
+    font-family: 'freesetcregular', Arial, sans-serif;
+}
+.vacancy-form__file {
+    margin-bottom: 24px;
+    position: absolute;
+    left: -50px;
+    opacity: 0;
+}
+.vacancy-form__file-button {
+    padding: 40px;
+    font-size: 2.4rem;
+    color: #005093;
+    border: 2px solid #005093;
+    border-radius: 5px;
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+    font-family: 'freesetdemicregular', Arial, sans-serif;
+    margin-bottom: 24px;
+    letter-spacing: 6px;
+}
+.vacancy-form__file-span {
+    display: inline-block;
+    font-size: 2.4rem;
+    color: #8791a8;
+    margin-bottom: 30px;
+}
+.vacancy-form__agree {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -30px;
+}
+.vacancy-form__agree:focus {
+    outline: none;
+}
+.vacancy-form__agree-label {
+    color: #8791a8;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    display: inline-block;
+    font-family: 'freesetcregular', Arial, sans-serif;
+}
+.vacancy-form__agree-link {
+    text-decoration: none;
+    color: #005093;
+}
+.vacancy-form__agree-label:before {
+    content: '';
+    display: inline-block;
+    background-color: #e5e5e5;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    vertical-align: sub;
+    margin-right: 10px;
+}
+.vacancy-form__submit {
+    font-size: 2.4rem;
+    color: #FFF;
+    background-color: #005093;
+    padding: 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'freesetdemicregular', Arial, sans-serif;
+    letter-spacing: 6px;
+}
+.vacancy-form__submit:disabled {
+    background-color: #f2f2f2;
+    color: #c6cad3;
+}
+
+
+.vacancy__back {
+    font-family: 'freesetcregular', Arial, sans-serif;
+    font-size: 2.4rem;
+    color: #8791a8;
+    text-decoration: none;
+}
+.vacancy__back:before {
+    content: url("img/back-arrow.png");
+    margin-right: 20px;
+}
+
+.address-list {
+    color: #005093;
+    font-size: 2.8rem;
+    font-family: 'freesetcregular', Arial, sans-serif;
+    float: right;
+    display: inline-block;
+}
+
+
+.footer {
+    background-color: #f5f5f5;
+}
+.footer-navigation {
+    list-style: none;
+}
+.footer-navigation__item {
+    border-bottom: 2px solid #d0d1d4;
+    font-family: 'freesetcregular', Arial, sans-serif;
+    font-size: 2.8rem;
+    color: #2f3543;
+    padding: 50px;
+}
+.footer-navigation__item:after {
+
+}
+.footer-navigation__item-link {
+    text-decoration: none;
+    color: #2f3543;
+}
