@@ -106,8 +106,8 @@
         </a>
     </div>
     <span class="footer__copyright">© 2001-2015</span>
-    <span class="footer__copyright"> Сеть поликлиник «Семейный доктор»</span>
-    <span class="footer__copyright">Карта сайта</span>
+    <span class="footer__copyright">ЗАО Сеть поликлиник «Семейный доктор»</span>
+    <a class="footer__copyright" href="">Карта сайта</a>
     <span class="footer__copyright-lastrow footer__copyright-lastrow--heart">Сделано с</span>
     <span class="footer__copyright-lastrow">в ITECH.group</span>
 </footer>

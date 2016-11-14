@@ -48,6 +48,7 @@ body {
 .header {
     background-color: #f5f5f5;
     padding: 40px;
+    margin-bottom: 100px;
 }
 .header__phone {
     font-size: 4rem;
@@ -68,6 +69,8 @@ body {
     color: #acadb1;
     font-size: 2.2rem;
     text-decoration: none;
+    margin-bottom: 48px;
+    display: inline-block;
 }
 .breadcrumbs__item:after {
     content:url("img/breadcrumbs-arrow.png");
@@ -91,6 +94,7 @@ body {
     border-bottom: 2px solid #e6e6e6;
     margin: auto -15px;
     padding: auto 15px;
+    margin-bottom: 100px;
 }
 .vacancy__name {
     font-family: 'freesetlightcregular', Arial, sans-serif;
@@ -190,6 +194,7 @@ h3 {
     font-family: 'freesetdemicregular', Arial, sans-serif;
     margin-bottom: 24px;
     letter-spacing: 6px;
+    cursor: pointer;
 }
 .vacancy-form__file-span {
     display: inline-block;
@@ -301,6 +306,21 @@ footer {
     color: #2f3543;
 }
 
+.footer__socials {
+    background-color: #FFF;
+    border-radius: 8px;
+    padding: 0;
+    width: 80%;
+    display: inline-block;
+    margin-bottom: 130px;
+}
+.footer__socials-item {
+    display: inline-block;
+    padding: 30px;
+    vertical-align: middle;
+    margin: 0;
+}
+
 .footer__number {
     font-size: 6.6rem;
     color: #2f3543;
@@ -323,6 +343,8 @@ footer {
     font-size: 2.4rem;
     display: inline-block;
     width: 100%;
+    margin-bottom: 28px;
+    text-decoration: none;
 }
 .footer__copyright-lastrow {
     color: rgba(47, 53, 67, .5);
