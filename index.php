@@ -81,7 +81,7 @@
     </div>
     <h3>Адреса поликлиник</h3>
     <a href="" class="address-list">Списком</a>
-    <img class="map" src="">
+    <div class="map"></div>
 </div>
 <footer>
     <ul class="footer-navigation">
@@ -90,7 +90,26 @@
         <a href="" class="footer-navigation__item-link"><li class="footer-navigation__item">Работа у нас</li></a>
     </ul>
     <a href="tel:+74957800771" class="footer__number">+7 495 780 07 71</a>
-    <span>Круглосуточная поддержка клиентов</span>
+    <span class="footer__number-desc">Круглосуточная поддержка клиентов</span>
+    <div class="footer__socials">
+        <a href="vk.com" class="footer__socials-item">
+            <img src="img/b.svg">
+        </a>
+        <a href="vk.com" class="footer__socials-item">
+            <img src="img/facebook%20logo.svg">
+        </a>
+        <a href="vk.com" class="footer__socials-item">
+            <img src="img/twitter.svg">
+        </a>
+        <a href="vk.com" class="footer__socials-item">
+            <img src="img/youtube.svg">
+        </a>
+    </div>
+    <span class="footer__copyright">© 2001-2015</span>
+    <span class="footer__copyright"> Сеть поликлиник «Семейный доктор»</span>
+    <span class="footer__copyright">Карта сайта</span>
+    <span class="footer__copyright-lastrow footer__copyright-lastrow--heart">Сделано с</span>
+    <span class="footer__copyright-lastrow">в ITECH.group</span>
 </footer>
 </body>
 </html>
