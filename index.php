@@ -7,15 +7,18 @@
     <meta name="viewport" content="width=device-width">
 </head>
 <body>
-<header class="header">
+<header class="header" id="headerMobile" style="display: none;">
     <a href="" class="logo__link">
         <img class="logo__img" src="img/logo.png">
     </a>
     <a href="" class="menu">
-        <img class="menu__img" src="img/burger.png">
+        <img class="menu__img" src="img/burger.svg">
     </a>
     <a href="tel:+74957800771" class="header__phone">+7 495 780 07 71</a>
 </header>
+<!--<header class="header" id="headerDesktop">-->
+<!---->
+<!--</header>-->
 <div class="content">
     <div class="breadcrumbs">
         <a href="" class="breadcrumbs__item">Главная</a>
@@ -28,9 +31,11 @@
         <div class="vacancy__info">
         <span class="vacancy__price">От 50 000 рублей</span>
         <span class="vacancy__stage">Опыт работы от 1 до 3 лет</span>
-        <span class="vacancy__education">Высшее образование</span><br>
-        <span class="vacancy__category">Оториноларингология</span>
-        <span class="vacancy__date">7 декабря</span>
+        <span class="vacancy__education">Высшее образование</span>
+            <div class="vacancy__info--second">
+                <span class="vacancy__category">Оториноларингология</span>
+                <span class="vacancy__date">7 декабря</span>
+            </div>
         </div>
         <h3 class="vacancy__duties">Должностные обязанности</h3>
         <ul class="duties-list custom-list">
