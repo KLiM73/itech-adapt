@@ -55,7 +55,7 @@ body {
 
 
     .breadcrumbs__item {
-        font-family: Arial;
+        font-family: "Arial";
         color: #acadb1;
         font-size: 1.1rem;
         text-decoration: none;
@@ -75,6 +75,7 @@ body {
         border-bottom: 1px solid #e6e6e6;
         margin-bottom: 4.4rem;
         margin-right: 40px;
+        overflow: hidden;
     }
 
     .vacancy__info {
@@ -114,7 +115,7 @@ body {
         margin-bottom: 1.5rem;
     }
     .vacancy__description {
-        margin-right: 500px;
+        margin-right: 450px;
     }
 
     h3 {
@@ -159,6 +160,7 @@ body {
         margin-bottom: 6.2rem;
         float: right;
         width: 390px;
+        padding-left: 50px;
     }
 
     .vacancy-form__name, .vacancy-form__phone, .vacancy-form__email, .vacancy-form__city, .vacancy-form__message {
@@ -296,6 +298,7 @@ body {
     .sidemenu {
         width: 360px;
         float: right;
+        margin-left: 50px;
     }
 
     footer {
@@ -389,6 +392,12 @@ body {
     }
 }
 
+@media only screen and (max-width: 1260px) {
+    .sidemenu {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 640px) {
 
     .content {
@@ -430,7 +439,7 @@ body {
 
     /*Хлебные крошки*/
     .breadcrumbs__item {
-        font-family: Arial;
+        font-family: 'Arial';
         color: #acadb1;
         font-size: 1.1rem;
         text-decoration: none;

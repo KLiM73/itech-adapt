@@ -33,7 +33,7 @@
         <div class="map"></div>
     </div>
     <div class="vacancy clearfix">
-        <div class="vacancy__info">
+        <div class="vacancy__info clearfix">
             <div class="vacancy__info--first">
                 <span class="vacancy__price">От 50 000 рублей</span>
                 <span class="vacancy__stage">Опыт работы от 1 до 3 лет</span>
@@ -44,7 +44,7 @@
                 <span class="vacancy__date">7 декабря</span>
             </div>
         </div>
-        <form action="" method="" class="vacancy-form" id="form-desktop">
+        <form action="" method="post" class="vacancy-form" id="form-desktop">
             <span class="vacancy-form__span">Откликнуться на вакансию</span>
             <input type="text" name="name" class="vacancy-form__name" placeholder="ФИО*" required>
             <input type="number" name="phone" class="vacancy-form__phone" placeholder="Телефон*" required>
@@ -91,7 +91,7 @@
             <li class="offers-list__item custom-list__item">Сменный график работы.</li>
         </ul>
             </div>
-        <form action="" method="" class="vacancy-form" id="form-mobile">
+        <form action="" method="post" class="vacancy-form" id="form-mobile">
             <span class="vacancy-form__span">Откликнуться на вакансию</span>
             <input type="text" name="name" class="vacancy-form__name" placeholder="ФИО*" required>
             <input type="number" name="phone" class="vacancy-form__phone" placeholder="Телефон*" required>
@@ -126,16 +126,16 @@
     <a href="tel:+74957800771" class="footer__number">+7 495 780 07 71</a>
     <span class="footer__number-desc">Круглосуточная поддержка клиентов</span>
     <div class="footer__socials">
-        <a href="vk.com" class="footer__socials-item">
+        <a href="http://vk.com" class="footer__socials-item">
             <img src="img/b.svg">
         </a>
-        <a href="vk.com" class="footer__socials-item">
+        <a href="http://facebook.com" class="footer__socials-item">
             <img src="img/facebook%20logo.svg">
         </a>
-        <a href="vk.com" class="footer__socials-item">
+        <a href="http://twitter.com" class="footer__socials-item">
             <img src="img/twitter.svg">
         </a>
-        <a href="vk.com" class="footer__socials-item">
+        <a href="http://youtube.com" class="footer__socials-item">
             <img src="img/youtube.svg">
         </a>
     </div>

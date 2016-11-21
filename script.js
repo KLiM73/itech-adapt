@@ -4,8 +4,8 @@ function mobileForm() {
     if (document.body.clientWidth < 641) {
         if (formDesk.className == "vacancy-form") {
             formDesk.classList.add("hidden");
+            formMob.classList.remove("hidden");
         }
-        formMob.classList.remove("hidden");
     } else {
         formDesk.classList.remove("hidden");
         if (formMob.className == "vacancy-form") {
@@ -17,8 +17,8 @@ function mobileForm() {
 function mobileSidemenu() {
     var sideDesk = document.querySelector("#sidemenu-desktop");
     var sideMob = document.querySelector("#sidemenu-mobile");
-    if (document.body.clientWidth < 641) {
-        sideDesk.classList.add("hidden")
+    if (document.body.clientWidth < 1261) {
+        sideDesk.classList.add("hidden");
         sideMob.classList.remove("hidden");
     } else {
         sideDesk.classList.remove("hidden");
@@ -32,3 +32,6 @@ function run() {
     mobileForm();
     mobileSidemenu();
 }
+
+mobileForm();
+mobileSidemenu();
