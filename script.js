@@ -1,6 +1,9 @@
+var formDesk = document.querySelector("#form-desktop");
+var formMob = document.querySelector("#form-mobile");
+var sideDesk = document.querySelector("#sidemenu-desktop");
+var sideMob = document.querySelector("#sidemenu-mobile");
+
 function mobileForm() {
-    var formDesk = document.querySelector("#form-desktop");
-    var formMob = document.querySelector("#form-mobile");
     if (document.body.clientWidth < 641) {
         if (formDesk.className == "vacancy-form") {
             formDesk.classList.add("hidden");
@@ -15,8 +18,6 @@ function mobileForm() {
 }
 
 function mobileSidemenu() {
-    var sideDesk = document.querySelector("#sidemenu-desktop");
-    var sideMob = document.querySelector("#sidemenu-mobile");
     if (document.body.clientWidth < 1261) {
         sideDesk.classList.add("hidden");
         sideMob.classList.remove("hidden");
@@ -33,5 +34,4 @@ function run() {
     mobileSidemenu();
 }
 
-mobileForm();
-mobileSidemenu();
+run();

@@ -94,7 +94,7 @@
         <form action="" method="post" class="vacancy-form" id="form-mobile">
             <span class="vacancy-form__span">Откликнуться на вакансию</span>
             <input type="text" name="name" class="vacancy-form__name" placeholder="ФИО*" required>
-            <input type="number" name="phone" class="vacancy-form__phone" placeholder="Телефон*" required>
+            <input type="text" name="phone" class="vacancy-form__phone" placeholder="Телефон*" required>
             <input type="email" name="email" class="vacancy-form__email" placeholder="Email">
             <input type="text" name="city" class="vacancy-form__city" placeholder="Город">
             <label class="vacancy-form__file-label">
