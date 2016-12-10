@@ -47,12 +47,47 @@ body {
     clear: both;
 }
 
+
+
 @media only screen and (min-width: 641px) {
     .content {
         max-width: 1500px;
         margin: auto;
         padding: 0 30px;
     }
+
+    .logo__link {
+        display: inline-block;
+        margin-bottom: 3.6rem;
+
+    }
+    .logo__img {
+        width: 14rem;
+    }
+
+    .header {
+        background-color: #f5f5f5;
+        padding: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .header__phone {
+        font-size: 2rem;
+        color: #2f3543;
+        text-decoration: none;
+        font-family: 'freesetdemicregular', Arial, sans-serif;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .menu {
+        float: right;
+    }
+    .menu__img {
+        width: 3.5rem;
+    }
+
 
 
     .breadcrumbs__item {
@@ -75,8 +110,8 @@ body {
         padding-bottom: 6.25rem;
         border-bottom: 1px solid #e6e6e6;
         margin-bottom: 4.4rem;
-        margin-right: 40px;
-        overflow: hidden;
+        margin-right: 400px;
+        float: right;
     }
 
     .vacancy__info {
@@ -116,7 +151,8 @@ body {
         margin-bottom: 1.5rem;
     }
     .vacancy__description {
-        margin-right: 450px;
+        float: right;
+        margin-right: 400px;
     }
 
     h3 {
@@ -141,7 +177,6 @@ body {
         font-size: 1.4rem;
         line-height: 1.8rem;
         margin-bottom: 2.4rem;
-
     }
 
     .custom-list__item:before {
@@ -160,11 +195,11 @@ body {
 
     /*Форма*/
     .vacancy-form {
-        overflow: hidden;
         margin-bottom: 6.2rem;
-        float: right;
         width: 390px;
-        padding-left: 64px;
+        float: right;
+        margin-left: 64px;
+        margin-right: -100%;
     }
 
     .vacancy-form__name, .vacancy-form__phone, .vacancy-form__email, .vacancy-form__city, .vacancy-form__message {
@@ -231,16 +266,22 @@ body {
         outline: none;
     }
 
-    .vacancy-form__agree:checked {
-
-    }
-
     .vacancy-form__agree-label {
         color: #8791a8;
         font-size: 1.4rem;
         margin-bottom: 1.5rem;
         display: inline-block;
         font-family: 'freesetcregular', Arial, sans-serif;
+        cursor: pointer;
+    }
+
+    .vacancy-form__agree-label--checked {
+        color: #8791a8;
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        font-family: 'freesetcregular', Arial, sans-serif;
+        cursor: pointer;
     }
 
     .vacancy-form__agree-link {
@@ -256,7 +297,27 @@ body {
         height: 20px;
         vertical-align: sub;
         margin-right: .5rem;
+    }
 
+    .vacancy-form__agree-label--checked:before {
+        content: '';
+        display: inline-block;
+        background-color: #e5e5e5;
+        width: 20px;
+        height: 20px;
+        vertical-align: sub;
+        margin-right: .5rem;
+    }
+
+    .vacancy-form__agree-label--checked:after {
+        content: '';
+        background: url("img/check.svg") no-repeat;
+        background-size: contain;
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 1078px;
     }
 
     .vacancy-form__submit {
@@ -267,7 +328,6 @@ body {
         border: none;
         border-radius: 3px;
         cursor: pointer;
-        /*width: 100%;*/
         font-family: 'freesetdemicregular', Arial, sans-serif;
         letter-spacing: 2px;
     }
@@ -281,15 +341,15 @@ body {
         padding: 20px;
         border: none;
         border-radius: 3px;
-        cursor: pointer;
     }
-
 
     .vacancy__back {
         font-family: 'freesetcregular', Arial, sans-serif;
         font-size: 1.2rem;
         color: #8791a8;
         text-decoration: none;
+        overflow: hidden;
+        display: none;
     }
 
     .vacancy__back:before {
@@ -314,8 +374,10 @@ body {
 
     .sidemenu {
         width: 360px;
-        float: right;
         margin-left: 50px;
+        display: inline-block;
+        float: right;
+        margin-right: -100%;
     }
 
     footer {
@@ -411,7 +473,16 @@ body {
 
 @media only screen and (max-width: 1260px) {
     .sidemenu {
-        width: 100%;
+        /*width: 100%;*/
+        margin-right: 0;
+        float: none;
+    }
+    .vacancy {
+        padding-bottom: 6.25rem;
+        border-bottom: 1px solid #e6e6e6;
+        margin-bottom: 4.4rem;
+        margin-right: 0;
+        float: right;
     }
 }
 
@@ -626,27 +697,58 @@ body {
         outline: none;
     }
 
+    .vacancy-form__agree-link {
+        text-decoration: none;
+        color: #005093;
+    }
+
     .vacancy-form__agree-label {
         color: #8791a8;
         font-size: 1.4rem;
         margin-bottom: 1.5rem;
         display: inline-block;
         font-family: 'freesetcregular', Arial, sans-serif;
-    }
-
-    .vacancy-form__agree-link {
-        text-decoration: none;
-        color: #005093;
+        cursor: pointer;
     }
 
     .vacancy-form__agree-label:before {
         content: '';
         display: inline-block;
         background-color: #e5e5e5;
-        width: 2rem;
-        height: 2rem;
+        width: 20px;
+        height: 20px;
         vertical-align: sub;
         margin-right: .5rem;
+    }
+
+    .vacancy-form__agree-label--checked {
+        color: #8791a8;
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        font-family: 'freesetcregular', Arial, sans-serif;
+        cursor: pointer;
+    }
+
+    .vacancy-form__agree-label--checked:before {
+        content: '';
+        display: inline-block;
+        background-color: #e5e5e5;
+        width: 20px;
+        height: 20px;
+        vertical-align: sub;
+        margin-right: .5rem;
+    }
+
+    .vacancy-form__agree-label--checked:after {
+        content: '';
+        background: url("img/check.svg") no-repeat;
+        background-size: contain;
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 2273px;
     }
 
     .vacancy-form__submit {

@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width">
 </head>
-<body onresize="run()">
-<header class="header" id="headerMobile" style="display: none;">
+<body>
+<header class="header" id="headerMobile">
     <a href="" class="logo__link">
         <img class="logo__img" src="img/logo.png">
     </a>
@@ -16,9 +16,6 @@
     </a>
     <a href="tel:+74957800771" class="header__phone">+7 495 780 07 71</a>
 </header>
-<!--<header class="header" id="headerDesktop">-->
-<!---->
-<!--</header>-->
 <div class="content clearfix">
     <div class="breadcrumbs">
         <a href="" class="breadcrumbs__item">Главная</a>
@@ -27,11 +24,6 @@
         <a href="" class="breadcrumbs__item">Врач-оториноларинголог</a>
     </div>
     <h2 class="vacancy__name">Врач-оториноларинголог</h2>
-    <div class="sidemenu" id="sidemenu-desktop">
-        <h3>Адреса поликлиник</h3>
-        <a href="" class="address-list">Списком</a>
-        <div class="map"></div>
-    </div>
     <div class="vacancy clearfix">
         <div class="vacancy__info clearfix">
             <div class="vacancy__info--first">
@@ -44,23 +36,6 @@
                 <span class="vacancy__date">7 декабря</span>
             </div>
         </div>
-        <form action="" method="post" class="vacancy-form" id="form-desktop">
-            <span class="vacancy-form__span">Откликнуться на вакансию</span>
-            <input type="text" name="name" class="vacancy-form__name" placeholder="ФИО*" required>
-            <input type="number" name="phone" class="vacancy-form__phone" placeholder="Телефон*" required>
-            <input type="email" name="email" class="vacancy-form__email" placeholder="Email">
-            <input type="text" name="city" class="vacancy-form__city" placeholder="Город">
-            <label class="vacancy-form__file-label">
-                <span class="vacancy-form__file-button">ПРИКРЕПИТЬ ФАЙЛ</span>
-                <input type="file" name="file" class="vacancy-form__file">
-            </label>
-            <span class="vacancy-form__file-span">Загрузите файл в формате MS Word или PDF</span>
-            <textarea class="vacancy-form__message" placeholder="Сопроводительное письмо" rows="4"></textarea>
-            <label class="vacancy-form__agree-label">
-                <input type="checkbox" class="vacancy-form__agree"> Я согласен на обработку <a href="" class="vacancy-form__agree-link">персональных данных</a>
-            </label>
-            <input type="submit" class="vacancy-form__submit" value="ОТПРАВИТЬ">
-        </form>
         <div class="vacancy__description clearfix">
             <h3 class="vacancy__duties">Должностные обязанности</h3>
             <ul class="duties-list custom-list">
@@ -91,10 +66,10 @@
             <li class="offers-list__item custom-list__item">Сменный график работы.</li>
         </ul>
             </div>
-        <form action="" method="post" class="vacancy-form" id="form-mobile">
+        <form action="" method="post" class="vacancy-form" id="form-desktop">
             <span class="vacancy-form__span">Откликнуться на вакансию</span>
             <input type="text" name="name" class="vacancy-form__name" placeholder="ФИО*" required>
-            <input type="text" name="phone" class="vacancy-form__phone" placeholder="Телефон*" required>
+            <input type="number" name="phone" class="vacancy-form__phone" placeholder="Телефон*" required>
             <input type="email" name="email" class="vacancy-form__email" placeholder="Email">
             <input type="text" name="city" class="vacancy-form__city" placeholder="Город">
             <label class="vacancy-form__file-label">
@@ -103,19 +78,18 @@
             </label>
             <span class="vacancy-form__file-span">Загрузите файл в формате MS Word или PDF</span>
             <textarea class="vacancy-form__message" placeholder="Сопроводительное письмо" rows="4"></textarea>
-            <label class="vacancy-form__agree-label">
-                <input type="checkbox" class="vacancy-form__agree"> Я согласен на обработку <a href="" class="vacancy-form__agree-link">персональных данных</a>
+            <label class="vacancy-form__agree-label" for="checkbox-desk" id="checkbox-desk-label">
+                <input type="checkbox" class="vacancy-form__agree" id="checkbox-desk" required> Я согласен на обработку <a href="" class="vacancy-form__agree-link">персональных данных</a>
             </label>
-            <input type="submit" class="vacancy-form__submit" value="ОТПРАВИТЬ">
+            <input type="submit" class="vacancy-form__submit" id="submit-desktop" value="ОТПРАВИТЬ">
         </form>
         <a href="./" class="vacancy__back">Вернуться к списку вакансий</a>
     </div>
-    <div class="sidemenu" id="sidemenu-mobile">
+    <div class="sidemenu" id="sidemenu-desktop">
         <h3>Адреса поликлиник</h3>
         <a href="" class="address-list">Списком</a>
         <div class="map"></div>
     </div>
-
 </div>
 <footer>
     <ul class="footer-navigation">

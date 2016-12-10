@@ -1,37 +1,21 @@
-var formDesk = document.querySelector("#form-desktop");
-var formMob = document.querySelector("#form-mobile");
-var sideDesk = document.querySelector("#sidemenu-desktop");
-var sideMob = document.querySelector("#sidemenu-mobile");
+function buttonAndChecks() {
+    var submitButton;
+    var checkbox;
+    var label;
 
-function mobileForm() {
-    if (document.body.clientWidth < 641) {
-        if (formDesk.className == "vacancy-form") {
-            formDesk.classList.add("hidden");
-            formMob.classList.remove("hidden");
-        }
+    submitButton = document.querySelector("#submit-desktop");
+    checkbox = document.querySelector("#checkbox-desk");
+    label = document.querySelector("#checkbox-desk-label");
+
+    if (checkbox.checked) {
+        submitButton.disabled = false;
+        label.className += "--checked";
     } else {
-        formDesk.classList.remove("hidden");
-        if (formMob.className == "vacancy-form") {
-            formMob.classList.add("hidden");
-        }
+        submitButton.disabled = true;
+        label.className = label.className.replace("--checked", "");
     }
 }
 
-function mobileSidemenu() {
-    if (document.body.clientWidth < 1261) {
-        sideDesk.classList.add("hidden");
-        sideMob.classList.remove("hidden");
-    } else {
-        sideDesk.classList.remove("hidden");
-        if (sideMob.className == "sidemenu") {
-            sideMob.classList.add("hidden");
-        }
-    }
-}
+document.querySelector("#checkbox-desk").addEventListener("change", buttonAndChecks);
 
-function run() {
-    mobileForm();
-    mobileSidemenu();
-}
-
-run();
+buttonAndChecks();
